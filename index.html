@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AutoClip</title>
+  <meta name="description" content="AutoClip is a desktop app that auto-edits short videos with Thai captions and can send finished clips to your TikTok drafts.">
+  <link rel="icon" href="icon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <img src="icon.png" alt="">
+    <a href="./">AutoClip</a>
+    <nav aria-label="Pages">
+      <a href="./" aria-current="page">Home</a>
+      <a href="terms.html">Terms of Service</a>
+      <a href="privacy.html">Privacy Policy</a>
+    </nav>
+  </header>
+  <main>
+    <h1>Short videos, edited on your own computer</h1>
+    <p class="muted">AutoClip (registered on TikTok for Developers as "AutoClipSW") is a desktop app for Windows.</p>
+
+    <div class="th" lang="th">
+      <p><b>AutoClip</b> คือโปรแกรมตัดคลิปสั้นที่ทำงานบนคอมพิวเตอร์ของคุณเอง ตัดช่วงเงียบ ใส่ซับไทย แปลงเป็นแนวตั้ง 9:16 และส่งคลิปที่เสร็จแล้วเข้าฉบับร่างใน TikTok ของคุณได้ คุณเป็นคนใส่แคปชั่นและกดโพสต์เองในแอป TikTok</p>
+    </div>
+
+    <h2>What it does</h2>
+    <ul>
+      <li>Removes long pauses and filler words from talking videos.</li>
+      <li>Transcribes Thai speech and burns in word-by-word captions.</li>
+      <li>Converts videos to vertical 9:16 (1080×1920) for short-form platforms.</li>
+      <li>Cleans up background noise and evens out loudness.</li>
+    </ul>
+
+    <h2>How it works with TikTok</h2>
+    <div class="card">
+      <ol>
+        <li>In AutoClip's settings, you choose <b>Connect TikTok account</b> and log in with TikTok (Login Kit). AutoClip asks for <code>user.info.basic</code> (to show which account is connected) and <code>video.upload</code>.</li>
+        <li>On a finished clip, you press <b>Send to TikTok</b>. AutoClip uploads that one video with the Content Posting API (upload to inbox).</li>
+        <li>TikTok sends you a notification. You open it in the TikTok app, add your caption, and decide whether to post. AutoClip never posts on its own.</li>
+      </ol>
+    </div>
+    <p>All editing happens locally. There is no AutoClip server: your videos, transcripts and TikTok login stay on your computer, except for the video you choose to send to TikTok. Details are in the <a href="privacy.html">Privacy Policy</a>.</p>
+
+    <h2>Contact</h2>
+    <p>Questions or problems: <a href="https://github.com/swkenz1">github.com/swkenz1</a></p>
+  </main>
+  <footer>
+    <p>AutoClip is an independent project and is not affiliated with, endorsed by, or sponsored by TikTok.</p>
+  </footer>
+</body>
+</html>

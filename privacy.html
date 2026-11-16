@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy · AutoClip</title>
+  <meta name="description" content="How the AutoClip desktop app handles your videos, transcripts and TikTok account data.">
+  <link rel="icon" href="icon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <img src="icon.png" alt="">
+    <a href="./">AutoClip</a>
+    <nav aria-label="Pages">
+      <a href="./">Home</a>
+      <a href="terms.html">Terms of Service</a>
+      <a href="privacy.html" aria-current="page">Privacy Policy</a>
+    </nav>
+  </header>
+  <main>
+    <h1>Privacy Policy</h1>
+    <p class="muted">Effective date: 16 November 2026</p>
+
+    <div class="th" lang="th">
+      <p><b>สรุป:</b> AutoClip ทำงานบนคอมพิวเตอร์ของคุณทั้งหมด ไม่มีเซิร์ฟเวอร์ของเรา และเราไม่เก็บข้อมูลของคุณ</p>
+      <p>ข้อมูลบัญชี TikTok (token, open ID, ชื่อที่แสดง, รูปโปรไฟล์) เก็บไว้ในเครื่องของคุณเท่านั้น ใช้เพื่อส่งคลิปที่คุณเลือกเข้าฉบับร่าง TikTok และยกเลิกการเชื่อมต่อได้ทุกเมื่อ</p>
+    </div>
+
+    <h2>Who we are</h2>
+    <p>AutoClip is a desktop application that runs on your own Windows computer. It is an independent project, not a company service, and it does not operate any server that receives your data.</p>
+
+    <h2>Data that stays on your computer</h2>
+    <ul>
+      <li><b>Videos and edits.</b> The videos you add, the audio extracted from them, transcripts, captions and rendered clips are stored in AutoClip's own folder on your computer.</li>
+      <li><b>Settings.</b> Your preferences and any API credentials you enter are stored in local files in the same folder.</li>
+    </ul>
+    <p>You can delete any project inside the app, which removes its files. Deleting the AutoClip folder removes everything.</p>
+
+    <h2>TikTok account data</h2>
+    <p>If you choose to connect a TikTok account, TikTok shares the following with AutoClip after you approve the login:</p>
+    <ul>
+      <li>an access token and a refresh token, the granted scopes, and your TikTok open ID;</li>
+      <li>your display name and avatar URL (scope <code>user.info.basic</code>), used only to show which account is connected.</li>
+    </ul>
+    <p>This data is saved only in a local file on your computer. It is used for one purpose: uploading a video you explicitly choose to your TikTok inbox as a draft (scope <code>video.upload</code>). AutoClip does not read your TikTok videos, followers, messages or analytics, and does not post anything publicly. You add the caption and decide whether to post in the TikTok app.</p>
+    <p>To disconnect, use <b>Disconnect</b> in AutoClip's settings. This deletes the local login and asks TikTok to revoke the token. You can also remove AutoClip's access from your TikTok account settings at any time.</p>
+
+    <h2>Data sent to other services</h2>
+    <ul>
+      <li><b>TikTok</b> receives the video file you choose to send, through the official TikTok Content Posting API. TikTok handles it under its own <a href="https://www.tiktok.com/legal/privacy-policy" rel="noopener">Privacy Policy</a>.</li>
+      <li><b>Anthropic (optional).</b> Only if you enter your own Anthropic API key and ask for AI captions, the transcript of that clip (and any product notes you type) is sent to Anthropic's API to write a hook, caption and hashtags.</li>
+      <li><b>Model downloads.</b> The speech-recognition model is downloaded once from Hugging Face. No personal data is sent with that download.</li>
+    </ul>
+    <p>AutoClip has no analytics, no advertising, and no tracking. We do not sell or share personal data.</p>
+
+    <h2>Children</h2>
+    <p>AutoClip is not directed at children under 13, and it must be used in line with TikTok's own age requirements.</p>
+
+    <h2>Changes</h2>
+    <p>If this policy changes, the new version will be posted on this page with a new effective date.</p>
+
+    <h2>Contact</h2>
+    <p>Questions about privacy: <a href="https://github.com/swkenz1">github.com/swkenz1</a></p>
+  </main>
+  <footer>
+    <p>AutoClip is an independent project and is not affiliated with, endorsed by, or sponsored by TikTok.</p>
+  </footer>
+</body>
+</html>
